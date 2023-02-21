@@ -1,0 +1,15 @@
+<div class="angular-editor-toolbar-set" style="z-index: 1000 !important;
+position: absolute !important;">
+    <button [id]="'bold-'+id" type="button" title="Bold" class="angular-editor-button" (click)="triggerCommand('bold')"
+            [disabled]="htmlMode"  tabindex="-1"><i class='fa fa-bold'></i></button>
+    <button [id]="'italic-'+id" type="button" title="Italic" class="angular-editor-button active"
+            (click)="triggerCommand('italic')"
+            [disabled]="htmlMode" tabindex="-1"><i class='fa fa-italic'></i>
+    </button>
+    <button [id]="'underline-'+id" type="button" title="Underline" class="angular-editor-button"
+            (click)="triggerCommand('underline')" [disabled]="htmlMode" [hidden]="isButtonHidden('underline')"
+            tabindex="-1"><i class='fa fa-underline'></i></button>
+    <button [id]="'strikeThrough-'+id" type="button" title="Strikethrough" class="angular-editor-button"
+            (click)="triggerCommand('strikeThrough')" [disabled]="htmlMode" [hidden]="isButtonHidden('strikeThrough')"
+            tabindex="-1"><i class='fa fa-strikethrough'></i></button>
+  </div>
